@@ -97,7 +97,7 @@ object OnyxHWREngine {
         log.i("Initializing OnyxHWR recognizer...")
 
         val inputArgs = HWRInputArgs().apply {
-            lang = "de_DE"
+            lang = "ru_RU"
             contentType = "Text"
             recognizerType = "MS_ON_SCREEN"
             this.viewWidth = viewWidth
@@ -242,7 +242,7 @@ object OnyxHWREngine {
 
         // Field 1: lang (string)
         writeTag(out, 1, 2)
-        writeString(out, "de_DE")
+        writeString(out, "ru_RU")
 
         // Field 2: contentType (string)
         writeTag(out, 2, 2)
